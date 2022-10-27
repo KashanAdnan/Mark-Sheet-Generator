@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MarkSheet</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="baapcontainer">
+      <div class="container">
+        <h1>MarkSheet</h1>
+        <div class="inputcont">
+          <label for="name">Name :</label>
+          <input type="text" placeholder="Enter Your Name" id="name" />
+          <br />
+        </div>
+        <div class="inputcont">
+          <label for="name">Urdu Marks :</label>
+          <input type="text" placeholder="Enter Your Urdu Marks" id="umark" />
+          <br />
+        </div>
+        <div class="inputcont">
+          <label for="name">English Marks :</label>
+
+          <input
+            type="text"
+            placeholder="Enter Your English Marks"
+            id="emark"
+          />
+          <br />
+        </div>
+
+        <div class="inputcont">
+          <label for="name">Chemistry Marks :</label>
+          <input
+            type="text"
+            placeholder="Enter Your Chemistry Marks"
+            id="chemistrymark"
+          />
+          <br />
+        </div>
+        <div class="inputcont">
+          <label for="name">Maths Marks :</label>
+
+          <input
+            type="text"
+            placeholder="Enter Your Maths Marks"
+            id="mathsmark"
+          />
+          <br />
+        </div>
+        <div class="inputcont">
+          <label for="name">Science Marks :</label>
+          <input
+            type="text"
+            placeholder="Enter Your Science Marks"
+            id="sciencemark"
+          />
+          <br />
+        </div>
+        <button id="pmsheet" onclick="claculate()">Print Your MarkSheet</button>
+      </div>
+      <div class="resultcontainer">
+          <table>
+          <tr>
+            <td>Total  Marks :</td>
+            <td id="remove">500</td>
+          </tr>   
+          <tr>
+            <td >Obtained Marks :</td>
+            <td id="obtainedmarks"></td>
+          </tr>
+          <tr>
+              <td>Percenteage :</td>
+              <td id="percentage"></td>
+          </tr>
+          <tr>
+            <td id="re">Remarks : </td>
+            <td id="remarks"></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>
